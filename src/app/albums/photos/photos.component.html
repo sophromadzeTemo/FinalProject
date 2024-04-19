@@ -1,0 +1,6 @@
+<div class="photoContainer">
+  <div *ngFor="let photo of photos">
+    <img [src]="photo.url" />
+    <p><span>Title: </span>{{ photo.title }}</p>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+div {
+  display: flex;
+  justify-content: center;
+  button {
+    margin-top: 100px;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgb(8, 8, 216);
+    border: none;
+    border-radius: 2px;
+    padding: 10px 15px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px grey);
+  }
+}
+
+table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  filter: drop-shadow(0px 0px 8px rgb(197, 197, 197));
+  th {
+    color: #fff;
+    text-align: center;
+    background-color: rgb(78, 189, 253);
+    border: none;
+    padding: 10px;
+    width: 33.33%;
+  }
+  td {
+    padding: 10px;
+    width: 33.33%;
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+  }
+  tr {
+    background-color: #fff;
+  }
+  tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+}

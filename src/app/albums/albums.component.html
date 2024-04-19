@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>ALBUM's AUTHOR</th>
+    <th>TITLE</th>
+    <th>NUMBER OF PHOTOS</th>
+  </tr>
+  <tr *ngFor="let album of albums" (click)="onPhoto(album.id)">
+    <td>{{ getUsers(album.userId) }}</td>
+    <td>{{ album.title }}</td>
+    <td>{{ getPhotosNumber(album.id) }}</td>
+  </tr>
+</table>

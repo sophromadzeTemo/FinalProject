@@ -1,0 +1,15 @@
+<div>
+  <button routerLink="/addpost">Add Post</button>
+</div>
+<table>
+  <tr>
+    <th>POST'S AUTHOR</th>
+    <th>TITLE</th>
+    <th>BODY</th>
+  </tr>
+  <tr *ngFor="let post of posts" (click)="onPost(post.id)">
+    <td>{{ getUsers(post.userId) }}</td>
+    <td>{{ post.title }}</td>
+    <td>{{ post.body }}</td>
+  </tr>
+</table>

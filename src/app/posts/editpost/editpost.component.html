@@ -1,0 +1,17 @@
+<div>
+  <div id="editing">
+    <i class="fa-solid fa-arrow-left" (click)="goBack()"></i>
+    <div *ngIf="showError && !post.title.trim()" style="color: red">
+      Please fill the title
+    </div>
+    <label for="title">Title</label>
+    <input id="title" type="text" [(ngModel)]="post.title" />
+    <div *ngIf="showError && !post.body.trim()" style="color: red">
+      Please fill the body
+    </div>
+    <label for="body">Body</label>
+    <textarea id="body" [(ngModel)]="post.body" cols="30" rows="6"></textarea>
+    <button (click)="updatePost()">Update</button>
+  </div>
+  <app-comms></app-comms>
+</div>

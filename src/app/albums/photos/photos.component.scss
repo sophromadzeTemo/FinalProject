@@ -1,0 +1,30 @@
+.photoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1199px;
+  position: relative;
+  top: 120px;
+  gap: 40px;
+  div {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  p {
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 10px 20px;
+    span {
+      color: rgb(78, 189, 253);
+    }
+  }
+}

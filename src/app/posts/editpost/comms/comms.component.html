@@ -1,0 +1,28 @@
+<div id="comments">
+  <div class="commentCards" *ngFor="let comm of comms">
+    <img src="../assets/images/Avatar.jpeg" alt="" />
+    <div>
+      <h4>{{ comm.name }}</h4>
+      <p>{{ comm.body }}</p>
+    </div>
+  </div>
+</div>
+<div>
+  <h5>Add Comment</h5>
+  <div id="addComms">
+    <img src="../assets/images/Avatar.jpeg" alt="" />
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" [(ngModel)]="newCommentName" />
+      <div *ngIf="showError && !newCommentName.trim()" style="color: red">
+        Please fill in the name
+      </div>
+      <label for="body2">Body</label>
+      <input id="body2" type="text" [(ngModel)]="newCommentBody" />
+      <div *ngIf="showError && !newCommentBody.trim()" style="color: red">
+        Please fill in the body
+      </div>
+      <button (click)="addComment()">Add</button>
+    </div>
+  </div>
+</div>

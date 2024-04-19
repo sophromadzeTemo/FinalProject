@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="content" *ngFor="let todo of todos">
+    <div class="first">
+      <p><span>Title:</span>{{ todo.title }}</p>
+      <div>
+        <span>Completion:</span>
+        <i *ngIf="todo.completed" class="fa-solid fa-check"></i>
+        <i *ngIf="!todo.completed" class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+  </div>
+</div>

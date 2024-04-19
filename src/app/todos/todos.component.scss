@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  top: 80px;
+  .content {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.92);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 1px 0 rgba(97, 2, 165, 1);
+    .first {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      span {
+        color: rgb(50, 190, 255);
+        font-weight: 700;
+      }
+      p {
+        font-weight: 700;
+        display: flex;
+        gap: 10px;
+      }
+      div {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .fa-xmark {
+          color: red;
+        }
+
+        .fa-check {
+          color: rgb(8, 212, 8);
+        }
+      }
+    }
+  }
+}

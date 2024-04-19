@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  position: relative;
+  top: 120px;
+  th {
+    color: #fff;
+    text-align: center;
+    background-color: rgb(78, 189, 253);
+    border: none;
+    padding: 10px;
+    width: 33.33%;
+  }
+  td {
+    padding: 10px;
+    width: 33.33%;
+    cursor: pointer;
+    border: 1px solid #f1f1f1;
+  }
+  tr {
+    background-color: #fff;
+  }
+  tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+}

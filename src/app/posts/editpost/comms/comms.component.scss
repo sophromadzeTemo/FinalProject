@@ -1,0 +1,85 @@
+.commentCards {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+  h4 {
+    color: rgb(78, 189, 253);
+  }
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.commentCards:hover {
+  filter: drop-shadow(0px 4px 2px gray);
+}
+
+#comments {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+#comments::-webkit-scrollbar {
+  width: 8px;
+}
+
+#comments::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+#comments::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 4px;
+}
+
+h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#addComms {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: rgb(241, 241, 241);
+  border-radius: 10px;
+  padding: 20px 90px;
+  img {
+    height: 50px;
+    width: 50px;
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label:first-child {
+      color: rgb(78, 189, 253);
+    }
+    input {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid lightgray;
+      padding: 5px;
+    }
+    button {
+      margin-top: 20px;
+      position: relative;
+      width: 100%;
+      max-width: 5vw;
+      padding: 5px 10px;
+      cursor: pointer;
+      align-self: flex-end;
+      background-color: gray;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+}
