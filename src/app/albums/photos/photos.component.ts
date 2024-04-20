@@ -17,11 +17,13 @@ export class PhotosComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // ამოვიღოთ 'albumId' პარამეტრი ამ როუთიდან.
-    const albumId = parseInt(this.route.snapshot.paramMap.get('albumId')!);
-    // წამოვიღოთ ფოტოები ალბომის ID-ის მიხედვით  AlbumService-დან
-    this.albumService.getPhotosByAlbumId(albumId).subscribe((photos) => {
-      this.photos = photos;
+    this.route.params.subscribe((params) => {
+      // ვიღებ 'albumId'-ს route-ს პარამეტრებიდან და ვაკონვერტირებ რიცხვად
+      const albumId = parseInt(params['albumId']!);
+      // 'albumId'-სთან დაკავშირებული ფოტოების მოთხოვნა სერვერიდან
+      this.albumService.getPhotosByAlbumId(albumId).subscribe((photos) => {
+        this.photos = photos;
+      });
     });
   }
 }
